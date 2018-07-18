@@ -3,18 +3,13 @@
 <div id="root"></div>
 <script src="../react.development.js"></script>
 <script src="../react-dom.development.js"></script>
-<!-- 🐨 remove this line
 <script src="../babel.js"></script>
-🐨 remove this line -->
-<script type="text/javascript">
+<script type="text/babel">
 // 🐨 on the script tag above, change `type="text/javascript"`
 // to `type="text/babel"` so babel will transpile and run this code.
 
 // You're going to re-implement this using JSX!
-const element = React.createElement('div', {
-  className: 'container',
-  children: 'Hello World',
-})
+const element = <div className='container'>Hello World</div>
 
 // JSX is more intuitive than the raw React API and is easier to understand
 // when reading the code. It's fairly simple syntactic sugar on top of the
