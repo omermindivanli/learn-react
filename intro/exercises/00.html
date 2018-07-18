@@ -1,1 +1,11 @@
 <!-- Basic JavaScript-rendered Hello World -->
+<body>
+    <div id="root"></div>
+    <script>
+        const rootEl = document.getElementById("root")
+        const element = document.createElement("div")
+        element.textContent = "Hello"
+        element.className = "container"
+        rootEl.appendChild(element)
+    </script>
+</body>
