@@ -1,21 +1,18 @@
 <!-- Intro to raw React APIs -->
 <body>
 <div id="root"></div>
-<!-- 🐨 remove this line
-<script src="../react.development.js"></script>
-<script src="../react-dom.development.js"></script>
-🐨 remove this line -->
 <script type="text/javascript">
 const rootElement = document.getElementById('root')
 
 // You're going to re-implement this code using React!
 // These three lines are similar to React.createElement
-const element = document.createElement('div')
-element.textContent = 'Hello World'
-element.className = 'container'
+const element = React.createElement('div', {
+    children: "Hello World",
+    className: "container"
+})
+console.log(element)
 // This is similar to ReactDOM.render
-rootElement.appendChild(element)
-
+ReactDOM.render(element, rootElement)
 // Let's convert this to use React! But don't worry, we wont be doing any JSX
 // just yet... You're going to use raw React APIs here. The two script tags
 // at the top of the page bring in two global variables we can use:
@@ -32,4 +29,6 @@ rootElement.appendChild(element)
 // 🐨 Please re-implement the regular document.createElement code above
 // with these React API calls
 </script>
+<script src="../react.development.js"></script>
+<script src="../react-dom.development.js"></script>
 </body>
